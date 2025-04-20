@@ -1,1 +1,120 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-text-color: #737373;
+}
+
+body {
+    /* font-family: 'Amatic SC', cursive; */
+    background-color: #f0f0f0;
+}
+
+/* Nav Bar  */
+.navbar {
+    height: 12vh;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.navbar .navbar-nav {
+    font-size: 1.1rem;
+}
+
+.fa-bars {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.dropdown-submenu .dropdown-menu {
+    left: 100%;
+    margin-top: -0.125rem;
+    margin-left: 0;
+}
+
+/* Home  */
+.home {
+    min-height: 88vh;
+}
+
+.home-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+}
+
+.home-description {
+    font-size: 23px;
+    color: var(--main-text-color);
+}
+
+.btn-outline-danger {
+    color: black;
+    text-decoration: none;
+}
+
+.btn-outline-danger i {
+    color: red;
+    font-size: 18px;
+    border: 3px solid red;
+    border-radius: 50%;
+    padding: 6px;
+    margin-right: 10px;
+}
+
+.btn-outline-danger:hover {
+    color: red;
+}
+
+.home-img img {
+    animation: floatUpDown 3s ease-in-out infinite;
+}
+
+
+
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+
+/* Write Media Queries for responsiveness Here  */
+@media screen and (max-width: 998px) {
+    .home-title {
+        font-size: 50px;
+    }
+
+    .home-description {
+        font-size: 18px;
+    }
+
+    .home-img img {
+        width: 100%;
+        height: auto;
+    }
+    /* At Nav Bar  */
+    .bar {
+        display: inline-block !important;
+    }
+    .home .video {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+}
