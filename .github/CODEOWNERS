@@ -1,0 +1,5 @@
+# CODEOWNERS - Only you can approve changes to core frontend files
+
+/main.js @Shehap152
+/style.css @Shehap152
+/index.html @Shehap152
