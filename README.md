@@ -15,8 +15,8 @@ This is a Front-End project developed as part of the NTI training program. The p
 ## Team Members
 
 - **Shihab Ghazal** (Team Leader)
-- Ahmad Mohamed
-- Ammar Yasser
+- Abdulrahman Dahshan
+- 
 
 ## Notes
 
