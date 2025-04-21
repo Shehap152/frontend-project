@@ -1,0 +1,10 @@
+.title-style {
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    font-weight:normal;
+}
+
+.paragraph-style {
+    font-size: 45px;
+    font-family: 'Amatic SC', cursive;
+}
