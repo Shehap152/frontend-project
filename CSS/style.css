@@ -62,7 +62,7 @@ body {
 
 .btn-outline-danger i {
     color: red;
-    font-size: 18px;
+    font-size: 15px;
     border: 3px solid red;
     border-radius: 50%;
     padding: 6px;
@@ -78,8 +78,62 @@ body {
 }
 
 
+/* About  */
+.about {
+    overflow: hidden;
+}
+.about-middle-section .btn {
+    display: block;
+    width: 55%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 25px;
+    padding: 8px 20px;
+}
 
+.about-middle-section .btn:hover {
+    background-color: white;
+    color: red;
+}
 
+.about-middle-section .about-icon {
+    background-color: rgba(255, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 50%;
+    color: red;
+    font-size: 30px;
+    transition: all .8s ease;
+}
+
+.about-middle-section .item-inner:hover .about-icon {
+    background-color: red;
+    color: white;
+}
+
+.about-middle-section .row-equal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.about-middle-section .about-item {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.about-middle-section .item-inner {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.about-middle-section .content {
+    flex: 1;
+}
+.about-btn {
+    color: white;
+    transition: all .8s ease;
+}
 @keyframes floatUpDown {
 
     0%,
@@ -94,6 +148,7 @@ body {
 
 
 /* Write Media Queries for responsiveness Here  */
+
 @media screen and (max-width: 998px) {
     .home-title {
         font-size: 50px;
@@ -107,14 +162,25 @@ body {
         width: 100%;
         height: auto;
     }
+
     /* At Nav Bar  */
     .bar {
         display: inline-block !important;
     }
+
     .home .video {
         display: flex;
         flex-direction: column;
         align-items: start;
         gap: 15px;
     }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    .why-us {
+        align-self: start !important;
+    }
+
 }
