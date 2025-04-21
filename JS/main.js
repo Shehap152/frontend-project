@@ -32,6 +32,10 @@ var menuItems = {
         { name: "Laboriosam Direva", price: "$9.95", img: "./img/menu/menu-item-6.png" }
     ]
   };
+
+  // const lightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
   
   const menuContainer = document.getElementById("menuContainer");
   const buttons = document.querySelectorAll("#menuNav .btn");
@@ -95,4 +99,6 @@ var menuItems = {
       new Swiper(swiperElement, config);
     });
   });
+
+
   
