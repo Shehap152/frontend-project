@@ -62,12 +62,12 @@ body {
 }
 
 .btn-outline-danger i {
-  color: red;
-  font-size: 18px;
-  border: 3px solid red;
-  border-radius: 50%;
-  padding: 6px;
-  margin-right: 10px;
+    color: red;
+    font-size: 15px;
+    border: 3px solid red;
+    border-radius: 50%;
+    padding: 6px;
+    margin-right: 10px;
 }
 
 .btn-outline-danger:hover {
@@ -83,19 +83,19 @@ body {
   100% {
     transform: translateY(0);
   }
-
-  50% {
+    50% {
     transform: translateY(-25px);
   }
 }
 
 /* Write Media Queries for responsiveness Here  */
-@media screen and (max-width: 998px) {
-  .home-title {
-    font-size: 50px;
-  }
 
-  .home-description {
+@media screen and (max-width: 998px) {
+    .home-title {
+        font-size: 50px;
+    }
+    
+      .home-description {
     font-size: 18px;
   }
 
@@ -114,6 +114,74 @@ body {
     gap: 15px;
   }
 }
+  
+  @media screen and (max-width: 1200px) {
+    .why-us {
+        align-self: start !important;
+    }
+
+}
+
+/* About  */
+.about {
+    overflow: hidden;
+}
+.about-middle-section .btn {
+    display: block;
+    width: 55%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 25px;
+    padding: 8px 20px;
+}
+
+.about-middle-section .btn:hover {
+    background-color: white;
+    color: red;
+}
+
+.about-middle-section .about-icon {
+    background-color: rgba(255, 0, 0, 0.05);
+    padding: 20px;
+    border-radius: 50%;
+    color: red;
+    font-size: 30px;
+    transition: all .8s ease;
+}
+
+.about-middle-section .item-inner:hover .about-icon {
+    background-color: red;
+    color: white;
+}
+
+.about-middle-section .row-equal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.about-middle-section .about-item {
+    display: flex;
+    padding: 0.5rem;
+}
+
+.about-middle-section .item-inner {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.about-middle-section .content {
+    flex: 1;
+}
+.about-btn {
+    color: white;
+    transition: all .8s ease;
+}
+
+
+  
+  
 
 .stats-section {
   background-image: url("../img/stats-bg.jpg");
@@ -134,10 +202,12 @@ body {
   z-index: 1;
 }
 
+
 .stats-section .container {
   position: relative;
   z-index: 2;
 }
+
 
 .btn {
     border: none;
@@ -377,8 +447,4 @@ body {
   .events .swiper-pagination .swiper-pagination-bullet-active {
     background-color:  #ce1212;
   }
-  
 
-
- 
-  
