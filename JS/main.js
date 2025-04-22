@@ -33,6 +33,10 @@ var menuItems = {
   ]
 };
 
+// const lightbox = GLightbox({
+//   selector: '.glightbox'
+// });
+
 const menuContainer = document.getElementById("menuContainer");
 const buttons = document.querySelectorAll("#menuNav .btn");
 
@@ -45,11 +49,11 @@ function renderMenu(category) {
       const col = document.createElement("div");
       col.className = "col-lg-4 col-sm-6";
       col.innerHTML = `
-          <img src="${item.img}" alt="${item.name}" class="img-fluid">
-          <h4 class="mt-3">${item.name}</h4>
-          <p>Lorem, deren, trataro, filede, nerada</p>
-          <b class="text-danger fs-3">${item.price}</b>
-        `;
+        <img src="${item.img}" alt="${item.name}" class="img-fluid">
+        <h4 class="mt-3">${item.name}</h4>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <b class="text-danger fs-3">${item.price}</b>
+      `;
       menuContainer.appendChild(col);
     });
     menuContainer.classList.remove("fade-out");
@@ -95,15 +99,5 @@ document.addEventListener("DOMContentLoaded", function () {
     new Swiper(swiperElement, config);
   });
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const navItems = document.querySelectorAll('.navbar-nav .nav-item');
 
-  navItems.forEach(item => {
-    item.addEventListener('click', function () {
-      // Remove 'active' class from all nav items
-      navItems.forEach(nav => nav.classList.remove('active'));
-      // Add 'active' class to the clicked nav item
-      this.classList.add('active');
-    });
-  });
-});
+

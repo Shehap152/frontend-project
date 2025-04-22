@@ -8,6 +8,7 @@
 
 :root {
     --main-text-color: #737373;
+    --icon-link-color: #8f8f92;
 }
 
 body {
@@ -437,7 +438,189 @@ header {
     background-color: #ce1212;
 }
 
+.chefs .team-member {
+    background-color: #ffffff;
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s;
+}
 
+.chefs .team-member .member-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.chefs .team-member .social {
+    position: absolute;
+    right: -100%;
+    top: 30px;
+    opacity: 0;
+    border-radius: 4px;
+    transition: 0.5s;
+    background: color-mix(in srgb, #ffffff, transparent 60%);
+    z-index: 2;
+}
+
+.chefs .team-member .social a {
+    transition: color 0.3s;
+    color: color-mix(in srgb, #212529, transparent 50%);
+    margin: 15px 12px;
+    display: block;
+    line-height: 0;
+    text-align: center;
+}
+
+.chefs .team-member .social a:hover {
+    color: #212529;
+}
+
+.chefs .team-member .social i {
+    font-size: 18px;
+}
+
+.chefs .team-member .member-info {
+    padding: 10px 15px 20px 15px;
+}
+
+.chefs .team-member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+
+}
+
+.chefs .team-member .member-info span {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    color: color-mix(in srgb, #212529, transparent 50%);
+}
+
+.chefs .team-member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 15px;
+    line-height: 26px;
+
+}
+
+.chefs .team-member:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.chefs .team-member:hover .social {
+    right: 8px;
+    opacity: 1;
+}
+
+
+
+
+.book-a-table .reservation-img {
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.book-a-table form {
+    padding: 30px;
+}
+
+
+.book-a-table form input[type=text],
+.book-a-table form input[type=email],
+.book-a-table form input[type=number],
+.book-a-table form input[type=date],
+.book-a-table form input[type=time],
+.book-a-table form textarea {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none;
+    border-radius: 0;
+    color: #212529;
+    background-color: color-mix(in srgb, #ffffff, transparent 20%);
+    border-color: color-mix(in srgb, #212529, transparent 80%);
+}
+
+.book-a-table button {
+    color: #ffffff;
+    background: #ce1212;
+    border: 0;
+    padding: 14px 60px;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.book-a-table button:hover {
+    background: color-mix(in srgb, #ce1212, transparent 20%);
+}
+
+
+
+.gallery {
+    overflow: hidden;
+}
+
+.gallery .swiper-wrapper {
+    height: auto;
+}
+
+.gallery .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet {
+    background-color: color-mix(in srgb, #212529, transparent 85%);
+    border: 0;
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #ce1212;
+    opacity: 1;
+}
+
+.gallery .swiper-slide-active {
+    text-align: center;
+}
+
+
+/* Contact Section  */
+.input-data:focus {
+    border-color: #ce1212;
+    box-shadow: none !important;
+}
+
+/* footer */
+footer {
+    background-color: rgb(31, 31, 36);
+}
+
+.social li,
+.social .icon-list-color {
+    transition: all .8s ease;
+}
+
+.social li {
+    outline: 1px solid #888;
+}
+
+.social li:hover {
+    outline: 1px solid #ce1212;
+    color: red !important;
+    cursor: pointer;
+}
+
+.social li:hover .icon-list-color {
+    color: #ce1212 !important;
+}
 
 /* Animation here */
 @keyframes floatUpDown {
@@ -461,7 +644,7 @@ header {
 
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 992px) {
     .home-title {
         font-size: 50px;
     }
@@ -481,11 +664,13 @@ header {
     }
 
     .booktable-1 {
-        display: none ;
+        display: none;
     }
+
     .booktable-2 {
         display: inline-block !important;
     }
+
     .home .video {
         display: flex;
         flex-direction: column;
@@ -520,11 +705,28 @@ header {
         margin-bottom: 2px;
         padding: 10px 20px;
     }
+
+    .gallery .swiper-wrapper {
+        padding: 40px 0;
+    }
+
+    .gallery .swiper-slide-active {
+        background: #ffffff;
+        border: 6px solid #ce1212;
+        padding: 4px;
+        z-index: 1;
+        transform: scale(1.2);
+        transition: none;
+    }
 }
 
 
 @media (max-width: 575px) {
     .events .event-item {
         min-height: 500px;
+    }
+
+    .book-a-table form {
+        padding: 20px;
     }
 }
