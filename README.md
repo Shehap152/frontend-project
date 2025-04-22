@@ -1,7 +1,7 @@
 ## Yummy
-
+---
 A clean and responsive restaurant website built with modern web technologies.
-
+---
 ## NTI Front-End Project
 
 - This is a Front-End project developed as part of the NTI training program. The project is built using HTML, CSS, and JavaScript.
