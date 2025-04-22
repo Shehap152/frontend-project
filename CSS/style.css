@@ -75,7 +75,12 @@ header {
     width: 100%;
 }
 
-
+.bookTableBtn {
+    text-decoration: none;
+    color: white;
+    background-color: #e74c3c;
+    padding: 10px 15px;
+}
 
 /* Home  */
 .home {
@@ -113,6 +118,54 @@ header {
 
 .home-img img {
     animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-25px);
+    }
+}
+
+/* Write Media Queries for responsiveness Here  */
+
+@media screen and (max-width: 998px) {
+    .home-title {
+        font-size: 50px;
+    }
+
+    .home-description {
+        font-size: 18px;
+    }
+
+    .home-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* At Nav Bar  */
+    .bar {
+        display: inline-block !important;
+    }
+
+    .home .video {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .why-us {
+        align-self: start !important;
+    }
+
 }
 
 /* About  */
@@ -174,6 +227,10 @@ header {
     transition: all .8s ease;
 }
 
+
+
+
+
 .stats-section {
     background-image: url("../img/stats-bg.jpg");
     background-size: cover;
@@ -199,8 +256,8 @@ header {
     z-index: 2;
 }
 
-
-.menu .btn {
+/*----------------------------------------------------------  comment ------------------------------------------------------------- */
+.btn {
     border: none;
     border-radius: 0px;
     background-color: transparent;
@@ -264,12 +321,11 @@ header {
 }
 
 
-.testimonials p {
+.section-title p {
     text-align: center;
-    /*  */
 }
 
-.testimonials p:first-child {
+.section-title p:first-child {
     letter-spacing: 2px;
     color: #888;
     font-size: 0.9rem;
@@ -278,15 +334,15 @@ header {
     margin-top: 50px;
 }
 
-.testimonials p:last-child {
-    font-family: "Amatic SC", cursive;
+.section-title p:last-child {
+    font-family: "Amatic SC";
     font-size: 3rem;
     font-weight: 400;
     color: #333;
     margin-bottom: 20px;
 }
 
-.testimonials .description-title {
+.section-title .description-title {
     color: #e74c3c;
 }
 
@@ -386,7 +442,11 @@ header {
     padding: 30px;
 }
 
-
+@media (max-width: 575px) {
+    .events .event-item {
+        min-height: 500px;
+    }
+}
 
 .events .event-item:before {
     content: "";
@@ -437,6 +497,8 @@ header {
 .events .swiper-pagination .swiper-pagination-bullet-active {
     background-color: #ce1212;
 }
+
+
 
 .chefs .team-member {
     background-color: #ffffff;
@@ -531,6 +593,7 @@ header {
 }
 
 
+
 .book-a-table form input[type=text],
 .book-a-table form input[type=email],
 .book-a-table form input[type=number],
@@ -591,7 +654,6 @@ header {
     text-align: center;
 }
 
-
 /* Contact Section  */
 .input-data:focus {
     border-color: #ce1212;
@@ -621,6 +683,8 @@ footer {
 .social li:hover .icon-list-color {
     color: #ce1212 !important;
 }
+
+
 
 /* Animation here */
 @keyframes floatUpDown {
@@ -720,10 +784,28 @@ footer {
     }
 }
 
+@media (min-width: 992px) {
+    .gallery .swiper-wrapper {
+        padding: 40px 0;
+    }
+
+    .gallery .swiper-slide-active {
+        background: #ffffff;
+        border: 6px solid #ce1212;
+        padding: 4px;
+        z-index: 1;
+        transform: scale(1.2);
+        transition: none;
+    }
+}
 
 @media (max-width: 575px) {
     .events .event-item {
         min-height: 500px;
+    }
+
+    .book-a-table form {
+        padding: 20px;
     }
 
     .book-a-table form {
