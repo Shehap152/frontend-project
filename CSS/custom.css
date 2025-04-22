@@ -1,3 +1,27 @@
+.bg-section-gray {
+    background-color: #f8f8f8;
+}
+
+/* ------- button style  --------- */
+
+.bookTableBtn {
+    text-decoration: none;
+    color: white;
+    background-color: #e74c3c;
+    padding: 10px 15px;
+    outline: .5px solid #e74c3c;
+    box-shadow: 0px 0px 10px #e74c3c;
+    border-radius: 10px !important;
+    transition: all .3s ease;
+}
+
+.bookTableBtn:hover {
+    color: #e74c3c;
+    background-color: transparent;
+    
+}
+
+/* ----------- */
 .title-style {
     text-transform: uppercase;
     color: var(--main-text-color);

@@ -21,7 +21,7 @@
 <body>
     <!-- =============== HEADER =============== -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
             <div class="container-fluid container">
                 <a class="navbar-brand" href="#">Yummy<span class="text-danger">.</span></a>
                 <div class="d-flex align-items-center ms-auto gap-2">
@@ -93,7 +93,8 @@
     <main>
 
         <!-- Home Section -->
-        <section id="home" class="section home d-flex align-items-center" data-aos="fade-up" data-aos-duration="1000">
+        <section id="home" class="section home d-flex align-items-center bg-section-gray" data-aos="fade-up"
+            data-aos-duration="1000">
             <div class="container p-5">
                 <div class="row  flex-wrap-reverse my-5">
                     <div class="home-info col-lg-6 d-flex flex-column justify-content-center">
@@ -125,7 +126,7 @@
                     </div>
                     <div class="row my-5 d-flex g-5">
                         <div class="about-left-section col-lg-7  d-flex flex-column justify-content-between"
-                            data-aos="fade-right" data-aos-duration="1500">
+                            data-aos="fade-up" data-aos-duration="1500">
                             <div class="about-image">
                                 <img src="img/about.jpg" alt="About Yummy" class="img-fluid" />
                             </div>
@@ -136,7 +137,7 @@
                             </div>
                         </div>
                         <div class="about-right-section  col-lg-5">
-                            <div class="about-info d-flex flex-column justify-content-between" data-aos="fade-left"
+                            <div class="about-info d-flex flex-column justify-content-between" data-aos="fade-up"
                                 data-aos-duration="1500">
                                 <p class="text-light-emphasis" style="font-style: italic;">Lorem ipsum dolor sit amet,
                                     consectetur adipiscing elit, sed do eiusmod tempor incididunt
@@ -174,10 +175,10 @@
         </section>
 
         <!-- middle section in About -->
-        <section class="about-middle-section">
+        <section class="about-middle-section bg-section-gray">
             <div class="container py-5">
                 <div class="row-equal">
-                    <div class="col-xl-4 col-lg-5 about-item p-3 why-us" data-aos="fade-right" data-aos-duration="1500">
+                    <div class="col-xl-4 col-lg-5 about-item p-3 why-us" data-aos="fade-up" data-aos-duration="1500">
                         <div class="item-inner bg-danger text-white p-4  h-100">
                             <h2 class="fw-bold">Why Choose Yummy</h2>
                             <div class="content my-4">
@@ -192,7 +193,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-7 about-item" data-aos="fade-left" data-aos-duration="1500">
+                    <div class="col-xl-8 col-lg-7 about-item" data-aos="fade-up" data-aos-duration="1500">
                         <div class="row-equal w-100">
                             <div class="col-xl-4 col-md-12 about-item why-us">
                                 <div class="item-inner text-white ">
@@ -318,12 +319,15 @@
 
 
         <!-- Testimonials Section -->
-        <section id="testimonials" class="testimonials section light-background">
+        <section id="testimonials" class="testimonials section light-background bg-section-gray mt-5 py-5">
 
 
-            <div class="container section-title" data-aos="fade-up">
-                <p>TESTIMONIALS</p>
-                <p>What Are They <span class="description-title">Saying About Us</span></p>
+            <div class="container section-title " data-aos="fade-up">
+                <div class="about-info text-center my-5" data-aos="fade-up" data-aos-duration="1500">
+                    <h6 class="title-style">TESTIMONIALS</h6>
+                    <p class="my-3 paragraph-style fw-bold">What Are They<span class="text-danger">Saying About
+                            Us</span></p>
+                </div>
             </div>
 
             <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -567,8 +571,10 @@
         <section id="chefs" class="chefs section">
 
             <div class="container section-title" data-aos="fade-up">
-                <p>chefs</p>
-                <p><span>Our</span> <span class="description-title">Proffesional Chefs<br></span></p>
+                <div class="about-info text-center my-5" data-aos="fade-up" data-aos-duration="1500">
+                    <h6 class="title-style">chefs</h6>
+                    <p class="my-3 paragraph-style fw-bold">Our<span class="text-danger">Proffesional Chefs</span></p>
+                </div>
             </div>
 
             <div class="container">
@@ -578,7 +584,14 @@
                     <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
                         <div class="team-member">
                             <div class="member-img">
-                                <img src="img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+                                <div class="img-container">
+                                    <img src="img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+                                    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                        <path fill="#fffff" fill-opacity="1"
+                                            d="M0,96L30,85.3C60,75,120,53,180,64C240,75,300,117,360,160C420,203,480,245,540,261.3C600,277,660,267,720,234.7C780,203,840,149,900,133.3C960,117,1020,139,1080,160C1140,181,1200,203,1260,192C1320,181,1380,139,1410,117.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                                        </path>
+                                    </svg>
+                                </div>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -599,7 +612,14 @@
                     <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
                         <div class="team-member">
                             <div class="member-img">
-                                <img src="img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+                                <div class="img-container">
+                                    <img src="img/chefs/chefs-2.jpg" class="img-fluid" alt="">
+                                    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                        <path fill="#fffff" fill-opacity="1"
+                                            d="M0,96L30,85.3C60,75,120,53,180,64C240,75,300,117,360,160C420,203,480,245,540,261.3C600,277,660,267,720,234.7C780,203,840,149,900,133.3C960,117,1020,139,1080,160C1140,181,1200,203,1260,192C1320,181,1380,139,1410,117.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                                        </path>
+                                    </svg>
+                                </div>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -620,7 +640,14 @@
                     <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
                         <div class="team-member">
                             <div class="member-img">
-                                <img src="img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+                                <div class="img-container">
+                                    <img src="img/chefs/chefs-3.jpg" class="img-fluid" alt="">
+                                    <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                                        <path fill="#fffff" fill-opacity="1"
+                                            d="M0,96L30,85.3C60,75,120,53,180,64C240,75,300,117,360,160C420,203,480,245,540,261.3C600,277,660,267,720,234.7C780,203,840,149,900,133.3C960,117,1020,139,1080,160C1140,181,1200,203,1260,192C1320,181,1380,139,1410,117.3L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+                                        </path>
+                                    </svg>
+                                </div>
                                 <div class="social">
                                     <a href=""><i class="bi bi-twitter-x"></i></a>
                                     <a href=""><i class="bi bi-facebook"></i></a>
@@ -644,15 +671,15 @@
         </section>
 
         <!-- Book A Table Section -->
-        <section id="book-a-table" class="book-a-table section">
-
-
+        <section id="book-a-table" class="book-a-table section p-1">
             <div class="container section-title" data-aos="fade-up">
-                <p>Book A Table</p>
-                <p><span>Book Your</span> <span class="description-title">Stay With Us<br></span></p>
+                <div class="about-info text-center my-5" data-aos="fade-up" data-aos-duration="1500">
+                    <h6 class="title-style">Book A Table</h6>
+                    <p class="my-3 paragraph-style fw-bold">Book Your<span class="text-danger">Stay With Us</span></p>
+                </div>
             </div>
 
-            <div class="container">
+            <div class="container bg-section-gray p-0 mb-5">
 
                 <div class="row g-0" data-aos="fade-up" data-aos-delay="100">
 
@@ -663,37 +690,37 @@
                         <form action="">
                             <div class="row gy-4">
                                 <div class="col-lg-4 col-md-6">
-                                    <input type="text" name="name" class="form-control" id="name"
+                                    <input type="text" name="name" class="form-control input-data" id="name"
                                         placeholder="Your Name" required="">
                                 </div>
                                 <div class="col-lg-4 col-md-6">
-                                    <input type="email" class="form-control" name="email" id="email"
+                                    <input type="email" class="form-control input-data" name="email" id="email"
                                         placeholder="Your Email" required="">
                                 </div>
                                 <div class="col-lg-4 col-md-6">
-                                    <input type="text" class="form-control" name="phone" id="phone"
+                                    <input type="text" class="form-control input-data" name="phone" id="phone"
                                         placeholder="Your Phone" required="">
                                 </div>
                                 <div class="col-lg-4 col-md-6">
-                                    <input type="date" name="date" class="form-control" id="date" placeholder="Date"
+                                    <input type="date" name="date" class="form-control input-data" id="date" placeholder="Date"
                                         required="">
                                 </div>
                                 <div class="col-lg-4 col-md-6">
-                                    <input type="time" class="form-control" name="time" id="time" placeholder="Time"
+                                    <input type="time" class="form-control input-data" name="time" id="time" placeholder="Time"
                                         required="">
                                 </div>
                                 <div class="col-lg-4 col-md-6">
-                                    <input type="number" class="form-control" name="people" id="people"
+                                    <input type="number" class="form-control input-data" name="people" id="people"
                                         placeholder="# of people" required="">
                                 </div>
                             </div>
 
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                                <textarea class="form-control input-data" name="message" rows="5" placeholder="Message"></textarea>
                             </div>
 
                             <div class="text-center mt-3">
-                                <button type="submit">Book a Table</button>
+                                <button class="bookTableBtn" type="submit">Book a Table</button>
                             </div>
                         </form>
                     </div>
@@ -705,15 +732,17 @@
         </section>
 
         <!-- Gallery Section -->
-        <section id="gallery" class="gallery section light-background">
+        <section id="gallery" class="gallery section light-background bg-section-gray my-5">
 
 
-            <div class="container section-title" data-aos="fade-up">
-                <p>Gallery</p>
-                <p><span>Check</span> <span class="description-title">Our Gallery</span></p>
+            <div class="container section-title my-5" data-aos="fade-up">
+                <div class="about-info text-center my-5" data-aos="fade-up" data-aos-duration="1500">
+                    <h6 class="title-style">Gallery</h6>
+                    <p class="my-3 paragraph-style fw-bold">Check<span class="text-danger">Our Gallery</span></p>
+                </div>
             </div>
 
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="container my-5" data-aos="fade-up" data-aos-delay="100">
 
                 <div class="swiper init-swiper">
                     <script type="application/json" class="swiper-config">
@@ -794,13 +823,13 @@
                     <h6 class="title-style">Contact</h6>
                     <p class="my-3 paragraph-style fw-bold">Need Help?<span class="text-danger">Contact Us</span></p>
                 </div>
-                <div class="map mb-5 w-100">
+                <div class="map mb-5 w-100" data-aos="fade-up" data-aos-delay="100">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115484.61602329691!2d86.90940401101749!3d25.24048652597029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f049f79910fbc7%3A0x9e3efe37aca8e227!2sBhagalpur%2C%20Bihar%2C%20India!5e0!3m2!1sen!2sus!4v1682485648718!5m2!1sen!2sus"
                         width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <div class="row mt-5 justify-content-center g-3">
+                <div class="row mt-5 justify-content-center g-3" data-aos="fade-up" data-aos-delay="150">
                     <div class="col-lg-6 ">
                         <div class="bg-light shadow rounded p-3 d-flex align-items-center gap-3">
                             <div class="icon text-white p-3 bg-danger rounded-circle"><i
@@ -846,7 +875,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cotact-form mt-5 p-5 pb-4 bg-white shadow">
+                <div class="cotact-form my-5 p-5 pb-4 bg-white shadow" data-aos="fade-up" data-aos-delay="150">
                     <form action="">
                         <div class="row g-3">
                             <div class="col-lg-6">
@@ -865,7 +894,7 @@
                             <div class="col-lg-12 text-center">
                                 <!-- <button type="submit" class="btn btn-danger rounded-5">Send Message</button> -->
                                 <button type="submit"
-                                    class="bookTableBtn btn-danger rounded-5 border-0 btn-outline-light">Send
+                                    class="bookTableBtn btn-danger rounded-5 border-0 btn-outline-light my-4">Send
                                     Message</button>
                             </div>
                         </div>
@@ -877,7 +906,7 @@
 
     <!-- =============== FOOTER =============== -->
     <footer>
-        <div class="container p-2 ">
+        <div class="container p-2 mt-5 ">
             <div class="row mt-5 justify-content-center g-3">
                 <div class="col-xl-3 col-lg-6">
                     <div class="p-3 d-flex gap-4">
