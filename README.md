@@ -1,7 +1,6 @@
 ## Yummy
 
 A clean and responsive restaurant website built with modern web technologies.
----
 
 ## NTI Front-End Project
 
