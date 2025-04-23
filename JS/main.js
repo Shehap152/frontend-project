@@ -101,3 +101,50 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+// ---------------------------------------------- //
+
+// Counter Animation for State Section
+// Get the counter elements for each state
+var state_1_counter = document.getElementById("state-1");
+var state_2_counter = document.getElementById("state-2");
+var state_3_counter = document.getElementById("state-3");
+var state_4_counter = document.getElementById("state-4");
+
+// Set Target For each State 
+state_1_target = Number(state_1_counter.innerHTML); // 232
+state_2_target = Number(state_2_counter.innerHTML); // 521
+state_3_target = Number(state_3_counter.innerHTML); // 1453
+state_4_target = Number(state_4_counter.innerHTML); // 32
+
+// Set Initial Value For each State equal to 0
+state_1_counter.innerHTML = 0;
+state_2_counter.innerHTML = 0;
+state_3_counter.innerHTML = 0;
+state_4_counter.innerHTML = 0;
+
+function counter(state_x_counter, state_x_target, step) {
+  let current = 0;
+
+  let intervalId = setInterval(function () {
+    current += step;
+    if (current >= state_x_target) {
+      current = state_x_target;
+      clearInterval(intervalId);
+    }
+    state_x_counter.innerHTML = Math.round(current);
+  }, 10); // Update every 10 ms
+}
+
+
+counter(state_1_counter, state_1_target, state_1_target / 100);
+counter(state_2_counter, state_2_target, state_2_target / 100);
+counter(state_3_counter, state_3_target, state_3_target / 100);
+counter(state_4_counter, state_4_target, state_4_target / 100);
+
+
+
+
+
+

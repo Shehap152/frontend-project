@@ -18,10 +18,12 @@
 .bookTableBtn:hover {
     color: #e74c3c;
     background-color: transparent;
-    
+
 }
 
-/* ----------- */
+/* --------------------------------- */
+
+
 .title-style {
     text-transform: uppercase;
     color: var(--main-text-color);

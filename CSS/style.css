@@ -11,12 +11,17 @@
     --icon-link-color: #8f8f92;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* font-family: 'Amatic SC', cursive; */
     /* background-color: #f0f0f0; */
 }
 
 
+/* ----------------- Header ------------------- */
 header {
     position: fixed;
     top: 0;
@@ -75,8 +80,9 @@ header {
     width: 100%;
 }
 
+/* ----------------- Main ------------------- */
 
-/* Home  */
+/* Home Section */
 .home {
     min-height: 88vh;
     padding-top: 80px;
@@ -115,7 +121,7 @@ header {
 }
 
 
-/* About  */
+/* About Section */
 .about {
     overflow: hidden;
 }
@@ -176,6 +182,7 @@ header {
 }
 
 
+/* State Section  */
 .stats-section {
     background-image: url("../img/stats-bg.jpg");
     background-size: cover;
@@ -202,6 +209,12 @@ header {
 }
 
 /*----------------------------------------------------------  comment ------------------------------------------------------------- */
+
+/* Menu Section */
+#menu {
+    overflow: hidden !important;
+}
+
 .btn {
     border: none;
     border-radius: 0px;
@@ -218,32 +231,6 @@ header {
 
 #menu .btn:hover {
     border-bottom: 2px solid red;
-}
-
-.menu-title {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.menu-title p:first-child {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #888;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-.menu-title p:last-child {
-    font-family: "Amatic SC", cursive;
-    font-size: 3rem;
-    font-weight: 400;
-    color: #333;
-    margin: 0;
-}
-
-.menu-title .description-title {
-    color: #e74c3c;
 }
 
 #menu .col-lg-4 {
@@ -266,31 +253,7 @@ header {
 }
 
 
-.section-title p {
-    text-align: center;
-}
-
-.section-title p:first-child {
-    letter-spacing: 2px;
-    color: #888;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 8px;
-    margin-top: 50px;
-}
-
-.section-title p:last-child {
-    font-family: "Amatic SC";
-    font-size: 3rem;
-    font-weight: 400;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.section-title .description-title {
-    color: #e74c3c;
-}
-
+/* Testimonials Section */
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
     overflow: hidden;
@@ -370,7 +333,7 @@ header {
     background-color: #ce1212;
 }
 
-
+/* Event Section  */
 .events {
     margin-top: 30px;
 }
@@ -439,7 +402,7 @@ header {
 }
 
 
-
+/* Chefs Section */
 .chefs .team-member {
     background-color: #ffffff;
     box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
@@ -544,12 +507,10 @@ header {
     background-position: center;
 }
 
-
+/* Book A Table Section  */
 .book-a-table form {
     padding: 30px;
 }
-
-
 
 .book-a-table form input[type=text],
 .book-a-table form input[type=email],
@@ -559,7 +520,6 @@ header {
 .book-a-table form textarea {
     font-size: 14px;
     padding: 10px 15px;
-    /* box-shadow: none; */
     border-radius: 0;
     color: #212529;
     background-color: color-mix(in srgb, #ffffff, transparent 20%);
@@ -582,8 +542,7 @@ header {
     background-color: transparent;
 }
 
-
-
+/* Gallery Section  */
 .gallery {
     overflow: hidden;
 }
@@ -620,7 +579,7 @@ header {
     box-shadow: none !important;
 }
 
-/* footer */
+/* ----------------- Footer ------------------- */
 footer {
     background-color: rgb(31, 31, 36);
 }
@@ -669,37 +628,10 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
-    .home-title {
-        font-size: 50px;
-    }
-
-    .home-description {
-        font-size: 18px;
-    }
-
-    .home-img img {
-        width: 100%;
-        height: auto;
-    }
 
     /* At Nav Bar  */
     .bar {
         display: inline-block !important;
-    }
-
-    .booktable-1 {
-        display: none;
-    }
-
-    .booktable-2 {
-        display: inline-block !important;
-    }
-
-    .home .video {
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        gap: 15px;
     }
 
     .navbar-collapse {
@@ -729,6 +661,36 @@ footer {
         margin-bottom: 2px;
         padding: 10px 20px;
     }
+
+    .home-title {
+        font-size: 50px;
+    }
+
+    .home-description {
+        font-size: 18px;
+    }
+
+    .home-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .booktable-1 {
+        display: none;
+    }
+
+    .booktable-2 {
+        display: inline-block !important;
+    }
+
+    .home .video {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 15px;
+    }
+
+
 
     .gallery .swiper-wrapper {
         padding: 40px 0;
