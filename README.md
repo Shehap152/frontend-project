@@ -42,3 +42,9 @@
 
 - The project is still under development.
 - Any suggestions or feedback are welcome.
+
+## Screenshot
+![](img/assets/webfront.png)
+![](img/assets/menu.png)
+![](img/assets/chefs.png)
+
