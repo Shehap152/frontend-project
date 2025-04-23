@@ -51,6 +51,6 @@
 ## 🚀 Live Preview
 
 Check out the live version of the project here:  
-👉 [Click to view the live project](https://shihab.github.io/HTML_And_CSS_project_1/)
+👉 [Click to view the live project](https://shehap152.github.io/frontend-project/)
 
 
