@@ -9,6 +9,7 @@
 :root {
     --main-text-color: #737373;
     --icon-link-color: #8f8f92;
+    --main-color: #e74c3c
 }
 
 html {
@@ -20,6 +21,18 @@ body {
     /* background-color: #f0f0f0; */
 }
 
+/* Scrolling box style  */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-color);
+}
 
 /* ----------------- Header ------------------- */
 header {
@@ -84,7 +97,7 @@ header {
 
 /* Home Section */
 .home {
-    min-height: 88vh;
+    min-height: 100vh;
     padding-top: 80px;
 }
 
@@ -528,17 +541,17 @@ header {
 .book-a-table button {
     margin-top: 25px;
     color: white;
-    background: #e74c3c;
+    background: var(--main-color);
     padding: 14px 60px;
-    outline: .5px solid #e74c3c;
-    box-shadow: 0px 0px 10px #e74c3c;
+    outline: .5px solid var(--main-color);
+    box-shadow: 0px 0px 10px var(--main-color);
     border-radius: 10px !important;
     transition: all .3s ease;
     border: none;
 }
 
 .book-a-table button:hover {
-    color: #e74c3c;
+    color: var(--main-color);
     background-color: transparent;
 }
 
