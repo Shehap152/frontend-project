@@ -18,6 +18,7 @@
 - CSS3
 - JavaScript
 - Bootstrap 5
+- jQuery
 
 ## Key Features
 
