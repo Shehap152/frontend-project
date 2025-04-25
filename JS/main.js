@@ -32,14 +32,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // To display links at mobile screen (Responsve) by click on bar icon :
-
 const menuIcon = document.getElementById('menu-icon');
 const links = document.querySelector('.links');
 
 menuIcon.addEventListener('click', () => {
 
   links.classList.toggle('display-links');
-
 
   if (menuIcon.classList.contains('fa-bars')) {
     menuIcon.classList.remove('fa-bars');
@@ -50,16 +48,41 @@ menuIcon.addEventListener('click', () => {
   }
 });
 
-// Red Line under links in Nav Bar
-const navLinks = document.querySelectorAll('.links ul > li > a');
+// To remove links when scroll  mobile screen :
+window.addEventListener('scroll', () => {
+  if (links.classList.contains('display-links')) {
+    links.classList.remove('display-links');
 
+    menuIcon.classList.remove('fa-xmark');
+    menuIcon.classList.add('fa-bars');
+  }
+});
+// seting for deep dropdown menu in mobile screen :
+const navLinks = document.querySelectorAll('.links ul > li > a');
 navLinks.forEach(link => {
-  link.addEventListener('click', function () {
+  link.addEventListener('click', function (e) {
+    if (this.classList.contains('deep-dropdown-toggle')) return;
 
     navLinks.forEach(l => l.classList.remove('active'));
-
     this.classList.add('active');
+
+    if (links.classList.contains('display-links')) {
+      links.classList.remove('display-links');
+
+      menuIcon.classList.remove('fa-xmark');
+      menuIcon.classList.add('fa-bars');
+    }
   });
+});
+// To remove links when click on any link in mobile screen :
+document.addEventListener('click', (e) => {
+  if (!links.contains(e.target) && !menuIcon.contains(e.target)) {
+    if (links.classList.contains('display-links')) {
+      links.classList.remove('display-links');
+      menuIcon.classList.remove('fa-xmark');
+      menuIcon.classList.add('fa-bars');
+    }
+  }
 });
 
 ////////////////////////
