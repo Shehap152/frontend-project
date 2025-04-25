@@ -1,3 +1,69 @@
+// Nab Bar 
+const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '.nav-bar',
+  offset: 100
+});
+// Drop Down :
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.deep-dropdown-toggle').forEach(toggle => {
+    const submenu = toggle.parentElement.querySelector('.fixed-submenu');
+
+
+    console.log('Deep dropdown found, attaching click handler');
+
+    toggle.addEventListener('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log('Deep dropdown clicked');
+
+
+      const rect = toggle.getBoundingClientRect();
+
+      submenu.classList.toggle('show');
+    });
+  });
+
+  document.addEventListener('click', e => {
+
+    document.querySelectorAll('.fixed-submenu.show').forEach(sm => {
+      if (!sm.contains(e.target)) sm.classList.remove('show');
+    });
+  });
+});
+
+// To display links at mobile screen (Responsve) by click on bar icon :
+
+const menuIcon = document.getElementById('menu-icon');
+const links = document.querySelector('.links');
+
+menuIcon.addEventListener('click', () => {
+
+  links.classList.toggle('display-links');
+
+
+  if (menuIcon.classList.contains('fa-bars')) {
+    menuIcon.classList.remove('fa-bars');
+    menuIcon.classList.add('fa-xmark');
+  } else {
+    menuIcon.classList.remove('fa-xmark');
+    menuIcon.classList.add('fa-bars');
+  }
+});
+
+// Red Line under links in Nav Bar
+const navLinks = document.querySelectorAll('.links ul > li > a');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function () {
+
+    navLinks.forEach(l => l.classList.remove('active'));
+
+    this.classList.add('active');
+  });
+});
+
+////////////////////////
+
 var menuItems = {
   starter: [
     { name: "Magnam Tiste", price: "$5.95", img: "./img/menu/menu-item-1.png" },
@@ -142,6 +208,36 @@ counter(state_1_counter, state_1_target, state_1_target / 100);
 counter(state_2_counter, state_2_target, state_2_target / 100);
 counter(state_3_counter, state_3_target, state_3_target / 100);
 counter(state_4_counter, state_4_target, state_4_target / 100);
+
+
+$(document).ready(function () {
+  var counted = false;
+  $(window).on('scroll', function () {
+    var oTop = $('.stats-section').offset().top - $(window).height();
+    if (!counted && $(window).scrollTop() > oTop) {
+      counted = true;
+      $('.stats-section h2').each(function () {
+        var $this = $(this);
+        var target = +$this.text();
+        $this.text('0');
+        $({ countNum: 0 }).animate(
+          { countNum: target },
+          {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+              $this.text(Math.floor(now));
+            },
+            complete: function () {
+              $this.text(target);
+            }
+          }
+        );
+      });
+    }
+  });
+});
+
 
 
 
