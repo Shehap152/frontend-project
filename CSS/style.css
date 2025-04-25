@@ -16,10 +16,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    /* font-family: 'Amatic SC', cursive; */
-    /* background-color: #f0f0f0; */
-}
+
 
 /* Scrolling box style  */
 ::-webkit-scrollbar {
